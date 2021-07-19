@@ -1,0 +1,20 @@
+# Config version, do not edit this!
+version: 1
+
+# Commands that are blacklisted
+# Example:
+# commands:
+#   -
+#     command: /help
+#   -
+#     command: /gamemode
+#     worlds:
+#       - exampleWorld
+#       - exampleWorld2
+commands: []
+
+# Use § for colors
+# The message to send when the player tries to use a globally blocked command
+globalBlockedMessage: "§cThis command is blocked!"
+# The message to send when the player tries to use a command that is blocked in specific world(s)
+blockedMessage: "§cThis command is blocked in this world!"

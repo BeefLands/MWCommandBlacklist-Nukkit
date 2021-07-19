@@ -1,0 +1,11 @@
+name: MWCommandBlacklist
+main: io.github.jaronz.mwcommandblacklist.MWCommandBlacklist
+version: "1.0.0"
+api: ["1.0.0"]
+
+author: JaronZ
+description: Plugin to blacklist commands in specific worlds
+permissions:
+  mwcommandblacklist.ignore:
+    description: "Allows player to use blocked commands"
+    default: op
