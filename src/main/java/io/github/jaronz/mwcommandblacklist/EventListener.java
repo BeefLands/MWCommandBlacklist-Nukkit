@@ -12,8 +12,11 @@ import java.util.Map;
 public class EventListener implements Listener {
     @EventHandler
     public void onCommand(PlayerCommandPreprocessEvent event){
-        Config config = MWCommandBlacklist.instance.getConfig();
         Player player = event.getPlayer();
+
+        if(player.hasPermission("mwcommandblacklist.ignore")) return;
+
+        Config config = MWCommandBlacklist.instance.getConfig();
         List<Map> blockedCommands = config.getMapList("commands");
 
         for(Map blockedCommand : blockedCommands){
