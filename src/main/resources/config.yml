@@ -1,14 +1,15 @@
 # Config version, do not edit this!
-version: 1
+version: 2
 
 # Commands that are blacklisted
 # Example:
 # commands:
 #   -
-#     command: /help
+#     command: /help        # The command to blacklist
+#     silent: true          # If a message that the command is blocked should be sent when using it (default: false)
 #   -
 #     command: /gamemode
-#     worlds:
+#     worlds:               # Specific worlds to blacklist the command in
 #       - exampleWorld
 #       - exampleWorld2
 commands: []

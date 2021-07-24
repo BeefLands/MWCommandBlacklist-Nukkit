@@ -6,7 +6,7 @@ import cn.nukkit.utils.Config;
 import cn.nukkit.utils.TextFormat;
 
 public class MWCommandBlacklist extends PluginBase {
-    private static final int configVersion = 1;
+    private static final int configVersion = 2;
 
     private PluginLogger logger;
     public static MWCommandBlacklist instance;

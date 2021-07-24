@@ -27,6 +27,7 @@ public class EventListener implements Listener {
                 if(hasWorlds && !((List<String>) blockedCommand.get("worlds")).contains(player.getLevel().getName()))
                     continue;
                 event.setCancelled();
+                if((boolean) blockedCommand.getOrDefault("silent", false)) continue;
                 player.sendMessage(config.getString(hasWorlds ? "blockedMessage" : "globalBlockedMessage"));
             }
         }
