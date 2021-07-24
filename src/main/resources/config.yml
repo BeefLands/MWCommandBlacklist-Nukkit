@@ -7,6 +7,7 @@ version: 2
 #   -
 #     command: /help        # The command to blacklist
 #     silent: true          # If a message that the command is blocked should be sent when using it (default: false)
+#     cancelIgnore: true    # If this command should still be blocked for a player with the mwcommandblacklist.ignore permission (default: false)
 #   -
 #     command: /gamemode
 #     worlds:               # Specific worlds to blacklist the command in
